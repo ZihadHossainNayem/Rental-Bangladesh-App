@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { BiMoon, BiSun } from "react-icons/bi";
 import { FaSearch } from "react-icons/fa";
 
@@ -10,19 +12,21 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
     //container
     <div className="fixed top-0 md:px-16 px-2 h-[90px] w-full flex items-center justify-between bg-white dark:bg-darkCol border-b dark:border-gray-700 z-[1000]">
       {/* logo */}
-      <div className="flex items-center gap-2 md:mx-4 mx-2">
-        {/* logo-icon */}
+
+      {/* logo-icon */}
+      <Link to="/" className="flex items-center gap-2 md:mx-4 mx-2">
         <img
           src={homeIconP}
           alt="homeIconPink"
           className="md:max-w-[32px] max-w-[28px]"
         />
+
         {/* logo-text */}
         <div className="hidden md:block text-2xl text-fuchsiaPink whitespace-nowrap">
           <span className="font-medium">Rental</span>{" "}
           <span className="font-bold">Bangladesh</span>
         </div>
-      </div>
+      </Link>
 
       {/* search section */}
       <div className="md:mx-4 mx-1 md:w-[680px] flex justify-center relative">
