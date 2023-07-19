@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Navbar } from "./components/Navbar";
-import { Suggestions } from "./components/Suggestions";
+import { Home } from "../src/Pages/Home";
 
 function App() {
   /* dark mode states */
@@ -10,7 +10,7 @@ function App() {
       <div className="bg-white text-darkCol dark:bg-darkCol dark:text-white">
         {/* components here... */}
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <Suggestions />
+        <Home />
       </div>
     </div>
   );
