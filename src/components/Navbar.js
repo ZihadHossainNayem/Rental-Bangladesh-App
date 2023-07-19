@@ -84,8 +84,9 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
             className="absolute md:right-16 right-12 top-1/2 -translate-y-1/2 
             border border-transparent hover:border-fuchsiaPink rounded-xl md:px-2 py-[2px] focus:outline-none bg-transparent"
           >
-            <div className="flex items-center md:gap-2">
-              {categorySelection} <BiChevronDown className="text-xl" />
+            <div className="flex items-center md:gap-2 ">
+              <div className="pl-2">{categorySelection}</div>
+              <BiChevronDown className="text-xl" />
             </div>
           </button>
           {/* show the options pop up */}
