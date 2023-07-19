@@ -73,7 +73,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
         <input
           type="text"
           placeholder={placeholder}
-          className="w-full md:px-6 px-4 md:py-[10px] py-[8px] border border-gray-300 dark:border-gray-700  
+          className="w-full md:pl-6 pl-4 xl:pr-44 lg:pr-40 md:pr-36 pr-28 md:py-[10px] py-[8px] border border-gray-300 dark:border-gray-700  
           rounded-3xl bg-transparent shadow-1 focus:outline-none"
         />
 
