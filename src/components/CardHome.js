@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import placeholderImg from "../assets/placeholder.jpg";
 
 import { BiBed, BiBath, BiArea, BiPhoneCall, BiCategory } from "react-icons/bi";
 import { RiSendPlaneLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import { IoLocationOutline, IoClose } from "react-icons/io5";
+import { ImageSlider } from "./ImageSlider";
 
 export const CardHome = () => {
   /* state for showing phone number */
@@ -20,14 +20,17 @@ export const CardHome = () => {
 
   /* handling form submit */
   const handleFormSubmit = () => {};
+
   return (
     <div className=" max-w-sm shadow-1 rounded-lg overflow-hidden border dark:border-gray-700">
-      {/* image */}
-      <img
-        src={placeholderImg}
-        alt="cardImg"
-        className="w-full h-56 object-cover"
-      />
+      {/*   <img
+          src={placeholderImg}
+          alt="cardImg"
+          className="w-full h-56 object-cover"
+        /> */}
+      {/* image slider component */}
+      <ImageSlider />
+
       {/* rental details */}
       <div className="px-4 py-4">
         {/* title, price, location category*/}
@@ -87,7 +90,9 @@ export const CardHome = () => {
                 >
                   <BiPhoneCall className="text-xl w-6 text-fuchsiaPink" /> Phone
                   Number:
-                  <span className="font-semibold">+880 1551942841</span>
+                  <span className="font-semibold hover:text-fuchsiaPink">
+                    +880 1551942841
+                  </span>
                 </a>
                 {/* whatsapp */}
                 <button
@@ -96,7 +101,9 @@ export const CardHome = () => {
                 >
                   <BsWhatsapp className="text-lg w-6 text-fuchsiaPink" />
                   WhatsApp:
-                  <span className="font-semibold">+880 1551942841</span>
+                  <span className="font-semibold hover:text-fuchsiaPink">
+                    +880 1551942841
+                  </span>
                 </button>
                 {/* email form */}
                 <form onSubmit={handleFormSubmit} className="mt-10 w-full">
