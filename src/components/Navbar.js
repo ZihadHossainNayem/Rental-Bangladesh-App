@@ -49,7 +49,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     //container
-    <div className="fixed top-0 lg:px-16 px-2 md:h-[90px] h-[80px] w-full flex items-center justify-between bg-white dark:bg-darkCol border-b dark:border-gray-700 z-[1000]">
+    <div className="fixed top-0 lg:px-16 px-2 h-[90px] w-full flex items-center justify-between bg-white dark:bg-darkCol border-b dark:border-gray-700 z-[99]">
       {/* right section */}
       {/* logo-icon */}
       <div>
